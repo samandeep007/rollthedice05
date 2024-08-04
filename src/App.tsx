@@ -40,7 +40,7 @@ export default function App(): JSX.Element {
     <View style={styles.container}>
       <Dice imageUrl={diceImage} />
       <Pressable style={styles.rollDiceBtnText} onPress={rollDiceOnTap}>
-        <Text>Roll the dice</Text>
+        <Text style={styles.rollDiceBtnText}>Roll the dice</Text>
       </Pressable>
     </View>
   )
