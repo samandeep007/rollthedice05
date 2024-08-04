@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Image, ImageSourcePropType } from 'react-native'
+import { StyleSheet, Text, View, Image, ImageSourcePropType, Pressable } from 'react-native'
 
 import React, { PropsWithChildren, useState } from 'react'
 
@@ -39,6 +39,9 @@ export default function App(): JSX.Element {
   return (
     <View style={styles.container}>
       <Dice imageUrl={diceImage} />
+      <Pressable style={styles.rollDiceBtnText} onPress={rollDiceOnTap}>
+        <Text>Roll the dice</Text>
+      </Pressable>
     </View>
   )
 }
