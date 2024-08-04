@@ -12,6 +12,14 @@ import DiceSix from '../assets/Six.png'
 type DiceProps = PropsWithChildren<{
   imageUrl: ImageSourcePropType
 }>
+
+const Dice = ({imageUrl}: DiceProps): JSX.Element => {
+return (
+  <View>
+    <Image style={styles.diceImage} source={imageUrl}/>
+  </View>
+)
+}
 export default function App(): JSX.Element {
   return (
     <View>
