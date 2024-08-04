@@ -45,7 +45,7 @@ export default function App(): JSX.Element {
       default: setDiceImage(DiceOne); break
 
     }
-    trigger("impactLight", options);
+    trigger("rigid", options);
   }
   return (
     <View style={styles.container}>
